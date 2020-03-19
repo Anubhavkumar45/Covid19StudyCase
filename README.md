@@ -9,3 +9,4 @@ Libraries used:
 -GeoPandas
 -Datetime
 -schedule
+-fbprophet
