@@ -26,9 +26,10 @@ def fetch_data():
 	final_df = merge_data(confirm_df,recovered_df,deaths_df)
 	print("Preview Data")
 	print(final_df.tail(5))
-	filename = "covid19_merged_dataset_updated_{}.csv".format(timestr)
+	filename = "./data/covid19_merged_dataset_updated_{}.csv".format(timestr)
 	print("Saving Dataset as {}".format(filename))
 	final_df.to_csv(filename)
+	final_df.to_csv("./data/coronovirus_updated_dataset.csv")
 	print("finished")
 
 
